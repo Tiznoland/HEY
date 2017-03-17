@@ -38,3 +38,22 @@ sudo apt-get --assume-yes install docker-ce
 wait
 
 sudo docker run hello-world
+
+wait
+
+git clone https://github.com/DinoTools/dionaea-docker.git
+
+wait
+
+docker build -t my-dionaea
+
+wait
+
+git clone https://github.com/mushorg/glastopf.git
+
+wait
+
+docker build --rm --tag glastoph .
+
+
+
