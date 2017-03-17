@@ -4,13 +4,13 @@ read stop < <(docker stop $(docker ps -a -q))
 
 read dio < <(docker run --rm -itd -p 21:21 -p 42:42 -p 69:69/udp -p 135:135 -p 443:443 -p 445:445 -p 1433:1433 -p 1723:1723 -p 1883:1883 -p 1900:1900/udp -p 3306:3306 -p 5060:5060 -p 5060:5060/udp -p 5061:5061 -p 11211:11211 my-dionaea)
 
-read glas < <(docker run --rm -itd -p 80:80  glastoph)
+read glas < <(docker run --rm -itd -p 80:80  glastopf)
 
 
 sleep 60
 
 while true;do
-mongoimport --db glastoph --file /var/lib/docker/containers/"$glas"/"$glas"-json.log
+mongoimport --db glastopf --file /var/lib/docker/containers/"$glas"/"$glas"-json.log
 > /var/lib/docker/containers/"$glas"/"/$glas"-json.log
 mongoimport --db dionaea --file /var/lib/docker/containers/"$dio"/"$dio"-json.log
 > /var/lib/docker/containers/"$dio"/"/$dio"-json.log
