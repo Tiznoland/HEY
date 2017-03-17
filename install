@@ -45,7 +45,7 @@ git clone https://github.com/DinoTools/dionaea-docker.git
 
 wait
 
-cd dionaea
+cd dionaea-docker
 
 wait
 
@@ -61,11 +61,11 @@ git clone https://github.com/mushorg/glastopf.git
 
 wait
 
-cd glastoph
+cd glastopf
 
 wait
 
-docker build --rm --tag glastoph .
+docker build --rm --tag glastopf .
 
 wait
 
