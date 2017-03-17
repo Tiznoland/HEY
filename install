@@ -45,7 +45,7 @@ git clone https://github.com/DinoTools/dionaea-docker.git
 
 wait
 
-cd dionaea-docker
+cd dionaea-docker/0.5
 
 wait
 
