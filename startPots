@@ -6,6 +6,7 @@ read dio < <(docker run --rm -itd -p 21:21 -p 42:42 -p 69:69/udp -p 135:135 -p 4
 
 read glas < <(docker run --rm -itd -p 80:80  glastopf)
 
+sudo service mongod start
 
 sleep 60
 
